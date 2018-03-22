@@ -8,9 +8,9 @@ contract Sample{
     }
 
     function set() pure {
-        a = 10;
+        a = 10; // error 발생
     }
-    
+
     function set1() view {
         a = 10;
     }
