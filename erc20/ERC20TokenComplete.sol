@@ -8,8 +8,8 @@ contract ERC20TokenComplete {
 
     mapping(address => uint256) public balanceOf;
 
-    event Transfer(address to, address from, uint amount);
-    event Burn(address owner, uint amount);
+    event Transfer(address indexed from, address indexed to, uint256 value);
+    event Burn(address indexed from, uint256 value);
 
     address owner; // 토큰 발행자
 
